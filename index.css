@@ -1,0 +1,151 @@
+#body {
+    background: linear-gradient(70deg, rgb(178, 116, 210), rgb(99, 10, 154));
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#box {
+    border-radius: 23px;
+    border: 2px transparent;
+    padding: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+    background-color: aliceblue;
+    box-sizing: border-box;
+}
+
+#numbering {
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.432);
+    margin-top: 10px;
+}
+
+#question {
+    font-size: 20px;
+    text-align: center;
+    margin: 8px;
+    font-weight: 150;
+    font-family: Sans-serif;
+    word-wrap: break-word;
+}
+
+#qAns {
+    width: 100%;
+
+    border: 2px transparent;
+    padding: 8px;
+    margin: auto;
+
+}
+
+.answers {
+    border-radius: 10px;
+    /* Smaller border-radius */
+    border-color: rgba(0, 0, 0, 0.402);
+    width: 100%;
+    /* Take full width */
+    height: 38px;
+    text-align: center;
+    margin-top: 8px;
+    /* Smaller top margin */
+    background-color: transparent;
+
+}
+
+#next {
+    border-radius: 10px;
+    /* Smaller border-radius */
+    margin-top: 12px;
+    width: 100%;
+    /* Take full width */
+    border-color: transparent;
+    background-color: rgb(28, 174, 227);
+}
+
+@media (max-width: 600px) {
+    #box {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* the css of result section */
+
+#resultDiv {
+    box-sizing: border-box;
+    display: none;
+    border-radius: 23px;
+    border: 2px transparent;
+    padding: 10px;
+    margin: 10px;
+    background-color: aliceblue;
+}
+
+#heading {
+    text-align: center;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.432);
+    margin-top: 10px;
+    margin-inline: 5%;
+    border-color: rgb(223, 226, 62);
+}
+
+#scoreHead {
+    font-size: 20px;
+    text-align: center;
+    margin: 8px;
+    font-weight: 150;
+    font-family: Sans-serif;
+    word-wrap: break-word;
+}
+
+.resulthead {
+    font-size: xx-large;
+    text-align: center;
+    margin: 8px;
+}
+
+#result {
+    box-sizing: border-box;
+    border: 4px solid rgb(223, 226, 62);
+    border-radius: 15px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.statusresult {
+
+    font-size: 25px;
+    text-align: center;
+    margin: 8px;
+    font-weight: 150;
+    font-family: Sans-serif;
+    word-wrap: break-word;
+    color: #ff006e;
+    font-weight: bold;
+}
+
+#status {
+    margin-bottom: 17px;
+}
+
+@media (max-width: 768px) {
+    #resultDiv {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #heading {
+        margin-inline: 5%;
+    }
+
+    #result {
+        padding: 5px;
+    }
+}
